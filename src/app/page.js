@@ -1,7 +1,7 @@
 import Image from "next/image";
-// import RenderModel from "@/components/RenderModel";
-// import Wizard from "@/components/models/Wizard";
-// import Navigation from "@/components/navigation";
+import Navigation from "@/components/navigation";
+import RenderModel from "@/components/RenderModel";
+import Hannah from "@/components/models/Hannah";
 
 export default function Home() {
   return (
@@ -15,10 +15,10 @@ export default function Home() {
         className="-z-50 w-full h-full object-cover object-center opacity-50"
       />
       <div className="w-full h-screen">
-        {/* <Navigation />
+        <Navigation />
         <RenderModel>
-          <Wizard page="home" position={[0, 1.5, 0]} />
-        </RenderModel> */}
+          <Hannah page="home" position={[0, 1.5, 0]} />
+        </RenderModel>
       </div>
     </main>
   );

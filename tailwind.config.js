@@ -7,9 +7,42 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        poppins: ["var(--font-poppins)"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "rgb(var(--background))",
+        foreground: "rgb(var(--foreground))",
+        muted: "rgb(var(--muted))",
+        accent: "rgb(var(--accent))",
+      },
+      backgroundImage: {
+        "firefly-radial":
+          "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%)",
+        // <- white
+        // -> yellow
+        // "firefly-radial":
+        //   "radial-gradient(50% 50% at 50% 50%, rgba(253, 255, 80, 0.5) 0%, rgba(217,217,217, 0) 100%)",
+      },
+      boxShadow: {
+        "glass-inset": "inset 0 17px 5px -9px rgba(200,162,200, 0.05)",
+        "glass-sm": "5px 5px 20px 0px rgba(200,162,200, 0.3)", // lavender
+      },
+      keyframes: {
+        "spin-reverse": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg)" },
+        },
+      },
+      animation: {
+        "spin-slow": "spin 60s linear infinite",
+        "spin-slow-reverse": "spin-reverse 60s linear infinite",
+        // "spin-slow": "spin 40s linear infinite",
+        // "spin-slow-reverse": "spin-reverse 40s linear infinite",
+      },
+      screens: {
+        xs: "480px",
       },
     },
   },
