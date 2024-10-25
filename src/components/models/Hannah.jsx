@@ -4,10 +4,10 @@ import { useFrame } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 
 const Hannah = React.memo(function Hannah(props) {
-  const hannahTexture = useTexture("/models/hannah-home.jpeg");
-  const contactTexture = useTexture("/models/hannah-contact.png");
-  const aboutTexture = useTexture("/models/hannah-about.png");
-  const projectsTexture = useTexture("/models/hannah-projects.png");
+  const hannahTexture = useTexture("./models/hannah-home.jpeg");
+  const contactTexture = useTexture("./models/hannah-contact.png");
+  const aboutTexture = useTexture("./models/hannah-about.png");
+  const projectsTexture = useTexture("./models/hannah-projects.png");
 
   const modelRef = useRef();
 
