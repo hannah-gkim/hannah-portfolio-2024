@@ -1,16 +1,25 @@
 import Image from "next/image";
+// import RenderModel from "@/components/RenderModel";
+// import Wizard from "@/components/models/Wizard";
+// import Navigation from "@/components/navigation";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <main className="flex min-h-screen flex-col items-center justify-between relative">
       <Image
-        className="dark:invert"
-        src="./next.svg"
-        alt="Next.js logo"
-        width={180}
-        height={38}
         priority
+        sizes="100vw"
+        src="./background/home-background.png"
+        alt="background-image"
+        fill
+        className="-z-50 w-full h-full object-cover object-center opacity-50"
       />
-    </div>
+      <div className="w-full h-screen">
+        {/* <Navigation />
+        <RenderModel>
+          <Wizard page="home" position={[0, 1.5, 0]} />
+        </RenderModel> */}
+      </div>
+    </main>
   );
 }
