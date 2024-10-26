@@ -1,4 +1,5 @@
 import { Inter, Poppins } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 import clsx from "clsx";
 import FireFliesBackground from "@/components/FireFliesBackground";
@@ -26,6 +27,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta property="og:image" content="./preview-image.png" />
+      </Head>
       <body
         className={clsx(
           poppins.variable,
