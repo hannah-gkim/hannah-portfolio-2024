@@ -27,7 +27,7 @@ export const metadata = {
     description: "portfolio for 2024",
     images: [
       {
-        url: "./preview/preview-image.png",
+        url: "/preview/preview-image.png",
         width: 1200,
         height: 630,
         alt: "Hannah's Portfolio Preview",
