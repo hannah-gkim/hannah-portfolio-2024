@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <meta property="og:image" content="./preview-image.png" />
+        <meta property="og:image" content="./preview/preview-image.png" />
       </Head>
       <body
         className={clsx(
