@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     name: "Portfolio ver. 2",
     description: "Hannah's portfolio version 2",
-    demoLink: "https://hannahgkim.com/",
+    demoLink: "https://hannah-gkim.github.io/hannah-new-profile/",
   },
   {
     id: 1,
