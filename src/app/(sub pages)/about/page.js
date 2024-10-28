@@ -21,7 +21,7 @@ export default function Home() {
       />
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <RenderModel>
-          <Hannah page="about" position={[0, 3, 0]} args={[7.1, 4.1]} />
+          <Hannah page="about" position={[0, 2.6, 0]} args={[7.1, 4.1]} />
         </RenderModel>
       </div>
       <div className="relative w-full h-screen flex flex-col items-center justify-center">

@@ -21,7 +21,7 @@ export default function Contact() {
       />
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/2 -translate-y-1/2 left-0 z-10">
         <RenderModel>
-          <Hannah page="contact" position={[0, 2.5, 0]} />
+          <Hannah page="contact" position={[0, 2.5, 0]} args={[3.2, 4.8]} />
         </RenderModel>
       </div>
       <article className="relative w-full flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">
